@@ -2472,7 +2472,7 @@
                 "symfony/config": "~3.4|~4.0",
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
-                "symfony/http-foundation": "^3.4|^4.0",
+                "symfony/http-foundation": "4.3.8",
                 "symfony/service-contracts": "^1.1",
                 "symfony/stopwatch": "~3.4|~4.0"
             },
@@ -2621,7 +2621,7 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.3.3",
+            "version": "v4.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
@@ -2693,7 +2693,7 @@
                 "psr/log": "~1.0",
                 "symfony/debug": "~3.4|~4.0",
                 "symfony/event-dispatcher": "^4.3",
-                "symfony/http-foundation": "^4.1.1",
+                "symfony/http-foundation": "4.3.8",
                 "symfony/polyfill-ctype": "~1.8",
                 "symfony/polyfill-php73": "^1.9"
             },
@@ -2768,7 +2768,7 @@
         },
         {
             "name": "symfony/mime",
-            "version": "v4.3.3",
+            "version": "v4.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
@@ -3242,7 +3242,7 @@
             "require": {
                 "php": "^7.1",
                 "psr/http-message": "^1.0",
-                "symfony/http-foundation": "^3.4 || ^4.0"
+                "symfony/http-foundation": "4.3.8"
             },
             "require-dev": {
                 "nyholm/psr7": "^1.1",
@@ -3318,7 +3318,7 @@
                 "symfony/config": "~4.2",
                 "symfony/dependency-injection": "~3.4|~4.0",
                 "symfony/expression-language": "~3.4|~4.0",
-                "symfony/http-foundation": "~3.4|~4.0",
+                "symfony/http-foundation": "4.3.8",
                 "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {

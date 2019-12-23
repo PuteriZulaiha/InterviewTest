@@ -144,7 +144,6 @@ class ListingController extends Controller
     {
         // Validation
         $validator = \Validator::make($request->all(), [
-            // 'user_id' => 'required|integer',
             'latitude' => 'required|numeric',
             'longitude' => 'required|numeric'
         ]);

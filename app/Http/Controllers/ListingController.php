@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Listing;
+use Auth;
 
 class ListingController extends Controller
 {
@@ -143,7 +144,7 @@ class ListingController extends Controller
     {
         // Validation
         $validator = \Validator::make($request->all(), [
-            'user_id' => 'required|integer',
+            // 'user_id' => 'required|integer',
             'latitude' => 'required|numeric',
             'longitude' => 'required|numeric'
         ]);
@@ -158,7 +159,7 @@ class ListingController extends Controller
             ]);
         }
 
-        $lists = $this->list->calculateDistance($request->latitude,$request->longitude)->where('submitter_id', $request->user_id)->get();
+        $lists = $this->list->calculateDistance($request->latitude,$request->longitude)->where('submitter_id', Auth::user()->id)->get();
         
         return response()->json([
             'listing' => $lists,
